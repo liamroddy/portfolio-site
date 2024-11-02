@@ -30,14 +30,7 @@ function Header({ theme, handleThemeChange }) {
             Take a gander at my <Link href="https://www.github.com/in/TODO" target="_blank" rel="noopener">GitHub</Link>.
           </Typography>
 
-          {/* <div className="social-links">
-            <Link href="https://www.linkedin.com/in/TODO" target="_blank" rel="noopener">
-              <LinkedInIcon fontSize="large" />
-            </Link>
-            <Link href="https://github.com/TODO" target="_blank" rel="noopener">
-              <GitHubIcon fontSize="large" />
-            </Link>
-          </div> */}
+          <div id='dark-mode-switch-spacer' style={{marginBottom: "2em"}}></div>
           
           <DarkModeSwitch
             handleThemeChange={handleThemeChange}
