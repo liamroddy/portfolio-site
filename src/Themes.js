@@ -13,6 +13,7 @@ const baseTheme = {
             fontWeight: 300,
             paddingTop: '0.8rem',
             color: 'tertiary',
+            lineHeight: 1.5
         },
         h1: {
             ...baseTypography,
