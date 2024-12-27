@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, Fade, Grid } from '@mui/material';
+import { Typography, Fade  } from '@mui/material';
 import Link from '@mui/material/Link';
 import DarkModeSwitch from './DarkModeSwitch';
 import './Header.css';
@@ -8,7 +8,6 @@ export const FADE_IN_TIME = 3000;
 function Header({ theme, handleThemeChange }) {
   return (
     <Fade in={true} timeout={FADE_IN_TIME}>
-      <Grid container>
         <div className="header-container">
           <img src={require('../images/headshot.jpg')} alt="Headshot" className="headshot" />
 
@@ -40,7 +39,6 @@ function Header({ theme, handleThemeChange }) {
             darkMode={theme.palette.mode === 'dark'}
           />
         </div>
-      </Grid>
     </Fade>
   );
 }

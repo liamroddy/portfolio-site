@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { Typography } from '@mui/material';
 import { CardMedia, Grid, Card, CardContent, Button } from '@mui/material';
 //import Grid from '@mui/material/Grid2';
@@ -10,7 +10,7 @@ import { FADE_IN_TIME, CAROUSEL_INTERVAL } from '../config';
 
 function Article({ category, header, images, theme, body, buttonText, buttonLink }) {
   return (
-    <Grid item sm={12} md={6} spacing={3} className='article'>
+    <Grid sm={12} md={6} className='article'>
       <Fade in={true} timeout={FADE_IN_TIME}>
         <Card sx={{ background: theme.palette.background.paper }} >
         <Carousel
@@ -21,9 +21,7 @@ function Article({ category, header, images, theme, body, buttonText, buttonLink
             showStatus={false} 
             showIndicators={false}
             interval={CAROUSEL_INTERVAL}
-            
             stopOnHover={false}
-
           >
             {images.map((image, index) => (
               <CardMedia
@@ -49,6 +47,7 @@ function Article({ category, header, images, theme, body, buttonText, buttonLink
               <Button
               variant="contained"
               color="primary"
+              style={{ marginTop: '1em' }}
               href={buttonLink}
               target="_blank"
               rel="noopener noreferrer">
