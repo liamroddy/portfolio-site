@@ -10,7 +10,7 @@ import { FADE_IN_TIME, CAROUSEL_INTERVAL } from '../config';
 
 function Article({ category, header, images, theme, body, buttonText, buttonLink }) {
   return (
-    <Grid sm={12} md={6} className='article'>
+    <div className='article'>
       <Fade in={true} timeout={FADE_IN_TIME}>
         <Card sx={{ background: theme.palette.background.paper }} >
         <Carousel
@@ -56,7 +56,7 @@ function Article({ category, header, images, theme, body, buttonText, buttonLink
           </CardContent>
         </Card>
       </Fade>
-    </Grid>
+    </div>
   );
 }
 

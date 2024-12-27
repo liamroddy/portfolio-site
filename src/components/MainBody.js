@@ -1,10 +1,12 @@
 import Article from "./Article";
 
 import { lightTheme, darkTheme } from '../Themes';
+import { Grid } from "@mui/material";
 
 function MainBody({ theme, darkMode }) {
     return (
-        <>
+        <Grid container>
+            <Grid xs={12} md={6} className='column'> 
               <Article category="GAME DESIGN" header="Worder" theme={darkMode ? darkTheme : lightTheme}
                 body="A game inspired by Wordle, but much harder! Built with React."
                 buttonText="Play Worder"
@@ -23,6 +25,8 @@ function MainBody({ theme, darkMode }) {
                   'gravity-flux/grav3.png'
                 ]}
               />
+            </Grid>
+            <Grid xs={12} md={6} className='column'> 
               <Article category="GRAPHIC DESIGN" header="Lockhart Engineering" theme={darkMode ? darkTheme : lightTheme}
                 body="A logo I made for a Sligo-based engineering firm."
                 images={[
@@ -41,7 +45,8 @@ function MainBody({ theme, darkMode }) {
                   'insta-art/art-3.jpg'
                 ]}
               />
-        </>
+            </Grid>
+        </Grid>
     );
 }
 

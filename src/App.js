@@ -20,14 +20,12 @@ function App() {
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
         <CssBaseline />
         <BackgroundHolder darkMode={darkMode} ></BackgroundHolder>
-        <Grid container spacing={3}>
+        <Grid container>
             <Grid xs={12} lg={5} className="Header">
                 <Header theme={darkMode ? darkTheme : lightTheme} handleThemeChange={handleThemeChange} />
             </Grid>
             <Grid xs={12} lg={7} className="MainBody">
-                <div>
                 <MainBody darkMode={darkMode}></MainBody>
-                </div>
             </Grid>
         </Grid>
     </ThemeProvider>
