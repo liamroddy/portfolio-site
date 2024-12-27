@@ -12,17 +12,17 @@ function MainBody({ theme, darkMode }) {
                 buttonText="Play Worder"
                 buttonLink={"https://liamroddy.github.io/Worder/"}
                 images={[
-                  'worder.webp'
+                  'worder-demo.webp'
                 ]}
                  />
-              <Article category="GAME DESIGN" header="Gravity Flux" theme={darkMode ? darkTheme : lightTheme}
-                buttonText="View on Itch.io"
-                buttonLink={"https://liamroddy.itch.io/gravityflux"}
-                body="A gravity-bending platformer I made with GameMaker Studio, available for download on Itch."
+              <Article category="ART" header="Digital Art and Comics" theme={darkMode ? darkTheme : lightTheme}
+                body="Some digital art and webcomics I've made over the years, primarily with Procreate and Photoshop."
+                buttonText="View on Instagram"
+                buttonLink={"https://www.instagram.com/l.j.roddy.art/"}
                 images={[
-                  'gravity-flux/grav1.png',
-                  'gravity-flux/grav2.png',
-                  'gravity-flux/grav3.png'
+                  'insta-art/art-1.jpg',
+                  'insta-art/art-2.jpg',
+                  'insta-art/art-3.jpg'
                 ]}
               />
             </Grid>
@@ -35,14 +35,14 @@ function MainBody({ theme, darkMode }) {
                   'lockhart-eng/lockhart-eng-van2.jpg'
                 ]} 
               />
-              <Article category="ART" header="Digital Art and Comics" theme={darkMode ? darkTheme : lightTheme}
-                body="Some digital art and webcomics I've made over the years, primarily with Procreate and Photoshop."
-                buttonText="View on Instagram"
-                buttonLink={"https://www.instagram.com/l.j.roddy.art/"}
+              <Article category="GAME DESIGN" header="Gravity Flux" theme={darkMode ? darkTheme : lightTheme}
+                buttonText="View on Itch.io"
+                buttonLink={"https://liamroddy.itch.io/gravityflux"}
+                body="A gravity-bending platformer I made with GameMaker Studio, available for download on Itch."
                 images={[
-                  'insta-art/art-1.jpg',
-                  'insta-art/art-2.jpg',
-                  'insta-art/art-3.jpg'
+                  'gravity-flux/grav1.png',
+                  'gravity-flux/grav2.png',
+                  'gravity-flux/grav3.png'
                 ]}
               />
             </Grid>
