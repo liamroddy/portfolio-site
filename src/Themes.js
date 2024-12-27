@@ -35,12 +35,14 @@ const baseTheme = {
     }
 };
 
-const lightBG = '#F9F9FC';
+const lightBGTop = '#e6e6ef';
+const lightBGBottom = '#F9F9FC';
 const lightTextPrimary = '#1D2125';
 const lightTextHeader = '#161A1D';
 const lightTextHighlight = "#829055";
 
-const darkBG = '#161A1D';
+const darkBGTop = '#161A1D';
+const darkBGBottom = '#22282d';
 const darkTextPrimary = '#F1F2F4';
 const darkTextHeader = '#F7F8F9';
 const darkTextHighlight =  "#ed32a4";
@@ -72,8 +74,8 @@ const lightTheme = createTheme({
             main: lightTextHighlight,
         },
         background: {
-            default: lightBG,
-            paper: lightBG
+            default: `linear-gradient(to bottom, ${lightBGTop}, ${lightBGBottom})`,
+            paper: `linear-gradient(to bottom, ${lightBGBottom}, ${lightBGTop})`,
         }
     },
 });
@@ -105,8 +107,8 @@ const darkTheme = createTheme({
             main: darkTextHighlight,
         },
         background: {
-            default: darkBG,
-            paper: darkBG
+            default: `linear-gradient(to bottom, ${darkBGTop}, ${darkBGBottom})`,
+            paper: `linear-gradient(to bottom, ${darkBGBottom}, ${darkBGTop})`,
         }
     },
 });

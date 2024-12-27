@@ -3,10 +3,11 @@ import { Typography, Fade, Grid } from '@mui/material';
 import Link from '@mui/material/Link';
 import DarkModeSwitch from './DarkModeSwitch';
 import './Header.css';
+export const FADE_IN_TIME = 3000;
 
 function Header({ theme, handleThemeChange }) {
   return (
-    <Fade in={true} timeout={3000}>
+    <Fade in={true} timeout={FADE_IN_TIME}>
       <Grid container>
         <div className="header-container">
           <img src={require('../images/headshot.jpg')} alt="Headshot" className="headshot" />
@@ -23,11 +24,13 @@ function Header({ theme, handleThemeChange }) {
           </Typography>
 
           <Typography variant="h3" component="h3" gutterBottom>
+            For more take a gander at my <Link href="https://github.com/liamroddy/" target="_blank" rel="noopener">GitHub</Link>.
+          </Typography>
+
+          <Typography variant="h3" component="h3" gutterBottom>
             Contact me on <Link href="https://www.linkedin.com/in/liam-roddy" target="_blank" rel="noopener">LinkedIn</Link>.
           </Typography>
-          <Typography variant="h3" component="h3" gutterBottom>
-            Take a gander at my <Link href="https://github.com/liamroddy/" target="_blank" rel="noopener">GitHub</Link>.
-          </Typography>
+          
 
           <div id='dark-mode-switch-spacer' style={{marginBottom: "2em"}}></div>
           

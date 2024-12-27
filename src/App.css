@@ -1,6 +1,44 @@
 body {
   transition: background-color 2s, color 2s;
-  background-color: black;
+}
+
+.background-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-holder::before,
+.background-holder::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 2s;
+}
+
+.background-holder::before {
+  background: linear-gradient(rgb(230, 230, 239), rgb(249, 249, 252));
+  opacity: 1;
+}
+
+.background-holder::after {
+  background: linear-gradient(rgb(22, 26, 29), rgb(34, 40, 45));
+  opacity: 0;
+}
+
+.background-holder.dark::before {
+  opacity: 0;
+}
+
+.background-holder.dark::after {
+  opacity: 1;
 }
 
 .MuiContainer-root {

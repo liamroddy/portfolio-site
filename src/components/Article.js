@@ -6,12 +6,13 @@ import './Article.css';
 import { Fade } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { FADE_IN_TIME, CAROUSEL_INTERVAL } from '../config';
 
 function Article({ category, header, images, theme, body, buttonText, buttonLink }) {
   return (
     <Grid item sm={12} md={6} spacing={3} className='article'>
-      <Fade in={true} timeout={3000}>
-        <Card sx={{ backgroundColor: theme.palette.background.paper }} >
+      <Fade in={true} timeout={FADE_IN_TIME}>
+        <Card sx={{ background: theme.palette.background.paper }} >
         <Carousel
             showThumbs={false} 
             autoPlay 
@@ -19,8 +20,10 @@ function Article({ category, header, images, theme, body, buttonText, buttonLink
             showArrows={false} 
             showStatus={false} 
             showIndicators={false}
-            interval={1000}
+            interval={CAROUSEL_INTERVAL}
+            
             stopOnHover={false}
+
           >
             {images.map((image, index) => (
               <CardMedia
@@ -42,7 +45,13 @@ function Article({ category, header, images, theme, body, buttonText, buttonLink
             <Typography variant="body1" component="p" gutterBottom>
               {body}
             </Typography>
-            {buttonText && buttonLink && <Button variant="contained" color="primary" href={buttonLink}>
+            {buttonText && buttonLink &&
+              <Button
+              variant="contained"
+              color="primary"
+              href={buttonLink}
+              target="_blank"
+              rel="noopener noreferrer">
               {buttonText}
             </Button>}
           </CardContent>
