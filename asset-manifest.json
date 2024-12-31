@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.7aade4a8.css",
-    "main.js": "/static/js/main.a9facebd.js",
+    "main.js": "/static/js/main.9c946755.js",
     "static/js/453.534db5b8.chunk.js": "/static/js/453.534db5b8.chunk.js",
     "static/media/headshot.jpg": "/static/media/headshot.d08de4e66dcd61929935.jpg",
     "static/media/lockhart-logo.jpeg": "/static/media/lockhart-logo.599446866a56418c903a.jpeg",
     "static/media/worder-demo.webp": "/static/media/worder-demo.2c160c771bc888364c0c.webp",
     "static/media/grav3.png": "/static/media/grav3.7947493b87622d7e04c9.png",
+    "static/media/art-2.jpg": "/static/media/art-2.556612f244a36dab6f00.jpg",
+    "static/media/art-3.jpg": "/static/media/art-3.453add57f1c9066c07f2.jpg",
     "static/media/grav2.png": "/static/media/grav2.83284d2272e43f913fd0.png",
     "static/media/lockhart-eng-van.jpg": "/static/media/lockhart-eng-van.5887906be62b610fbed1.jpg",
-    "static/media/art-2.jpg": "/static/media/art-2.778142e7e88360f74895.jpg",
-    "static/media/art-3.jpg": "/static/media/art-3.c175e2da30109663200d.jpg",
     "static/media/grav1.png": "/static/media/grav1.7faea05a65fd0e4cd813.png",
     "static/media/art-1.jpg": "/static/media/art-1.ad75aa6331aadbbdd545.jpg",
     "static/media/lockhart-eng-van2.jpg": "/static/media/lockhart-eng-van2.43f18499b4b434392471.jpg",
     "index.html": "/index.html",
     "main.7aade4a8.css.map": "/static/css/main.7aade4a8.css.map",
-    "main.a9facebd.js.map": "/static/js/main.a9facebd.js.map",
+    "main.9c946755.js.map": "/static/js/main.9c946755.js.map",
     "453.534db5b8.chunk.js.map": "/static/js/453.534db5b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7aade4a8.css",
-    "static/js/main.a9facebd.js"
+    "static/js/main.9c946755.js"
   ]
 }
