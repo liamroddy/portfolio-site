@@ -1,5 +1,5 @@
 import React from 'react';
-import './BackgroundHolder.css';
+import './BackgroundHolder.scss';
 
 export default function BackgroundHolder({ darkMode }) {
     return (

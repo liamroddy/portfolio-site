@@ -7,7 +7,7 @@ import Header from './components/Header';
 import MainBody from './components/MainBody';
 import BackgroundHolder from './components/BackgroundHolder';
 import { lightTheme, darkTheme } from './Themes';
-import './App.css';
+import './App.scss';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);

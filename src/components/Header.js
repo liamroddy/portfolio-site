@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Fade  } from '@mui/material';
 import Link from '@mui/material/Link';
 import DarkModeSwitch from './DarkModeSwitch';
-import './Header.css';
+import './Header.scss';
 export const FADE_IN_TIME = 3000;
 
 function Header({ theme, handleThemeChange }) {

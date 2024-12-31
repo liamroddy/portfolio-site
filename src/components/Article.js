@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography } from '@mui/material';
 import { CardMedia, Grid, Card, CardContent, Button } from '@mui/material';
 //import Grid from '@mui/material/Grid2';
-import './Article.css';
+import './Article.scss';
 import { Fade } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -37,7 +37,14 @@ function Article({ category, header, images, theme, body, buttonText, buttonLink
             <Typography variant="h2" component="h2" gutterBottom>
               {category}
             </Typography>
-            <Typography variant="h1" component="h1">
+            <Typography variant="h1"
+            component="h1"
+            style={{ 
+              hyphens: 'auto', 
+              wordBreak: 'break-word', 
+              overflowWrap: 'break-word' 
+            }}
+            lang="en">
               {header}
             </Typography>
             <Typography variant="body1" component="p" gutterBottom>

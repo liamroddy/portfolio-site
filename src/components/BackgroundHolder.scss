@@ -1,9 +1,14 @@
+$light-gradient-top: #e6e6ef;
+$light-gradient-bottom: #f9f9fc;
+$dark-gradient-top: #161a1d;
+$dark-gradient-bottom: #22282d;
+
 .background-holder {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
     overflow: hidden;
   }
@@ -14,18 +19,18 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     transition: opacity 2s;
   }
   
   .background-holder::before {
-    background: linear-gradient(rgb(230, 230, 239), rgb(249, 249, 252));
+    background: linear-gradient($light-gradient-top, $light-gradient-bottom);
     opacity: 1;
   }
   
   .background-holder::after {
-    background: linear-gradient(rgb(22, 26, 29), rgb(34, 40, 45));
+    background: linear-gradient($dark-gradient-top, $dark-gradient-bottom);
     opacity: 0;
   }
   
