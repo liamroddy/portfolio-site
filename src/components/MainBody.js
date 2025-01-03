@@ -8,11 +8,19 @@ function MainBody({ theme, darkMode }) {
         <Grid container>
             <Grid xs={12} md={6} className='column'> 
               <Article category="GAME DESIGN" header="Worder" theme={darkMode ? darkTheme : lightTheme}
-                body="A game inspired by Wordle, but much harder! Built with React."
+                body="A game inspired by Wordle, but much harder! Built with React, react-spring, and react-modal."
                 buttonText="Play Worder"
                 buttonLink={"https://liamroddy.github.io/Worder/"}
                 images={[
                   'worder-demo.webp'
+                ]}
+                 />
+              <Article category="HOBBY ELECTRONICS" header="LED Matrix Clock" theme={darkMode ? darkTheme : lightTheme}
+                body="An LED project clock I designed and built using a 64x64 Waveshare LED Matrix Board and a Rasberry Pi Zero 2W."
+                buttonText="View Project on Github"
+                buttonLink={"https://github.com/liamroddy/LED-Matrix-Clock/tree/main"}
+                images={[
+                  'clock-photo.jpg'
                 ]}
                  />
               <Article category="ART" header="Digital Art and Comics" theme={darkMode ? darkTheme : lightTheme}
