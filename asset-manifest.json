@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7aade4a8.css",
-    "main.js": "/static/js/main.f19fed65.js",
+    "main.css": "/static/css/main.308837e2.css",
+    "main.js": "/static/js/main.0dc8f570.js",
     "static/js/453.534db5b8.chunk.js": "/static/js/453.534db5b8.chunk.js",
     "static/media/headshot.jpg": "/static/media/headshot.d08de4e66dcd61929935.jpg",
     "static/media/clock-photo.jpg": "/static/media/clock-photo.d8791bec526d67e61c51.jpg",
@@ -16,12 +16,12 @@
     "static/media/art-1.jpg": "/static/media/art-1.ad75aa6331aadbbdd545.jpg",
     "static/media/lockhart-eng-van2.jpg": "/static/media/lockhart-eng-van2.43f18499b4b434392471.jpg",
     "index.html": "/index.html",
-    "main.7aade4a8.css.map": "/static/css/main.7aade4a8.css.map",
-    "main.f19fed65.js.map": "/static/js/main.f19fed65.js.map",
+    "main.308837e2.css.map": "/static/css/main.308837e2.css.map",
+    "main.0dc8f570.js.map": "/static/js/main.0dc8f570.js.map",
     "453.534db5b8.chunk.js.map": "/static/js/453.534db5b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7aade4a8.css",
-    "static/js/main.f19fed65.js"
+    "static/css/main.308837e2.css",
+    "static/js/main.0dc8f570.js"
   ]
 }
