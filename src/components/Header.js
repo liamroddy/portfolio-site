@@ -38,6 +38,11 @@ function Header({ theme, handleThemeChange }) {
             theme={theme}
             darkMode={theme.palette.mode === 'dark'}
           />
+
+          <Typography variant="p" component="p" gutterTop>
+            <br/>This site was built with React and Material UI.
+            <br/>View the source code on <Link href="https://github.com/liamroddy/portfolio-site" target="_blank" rel="noopener">GitHub</Link>.
+          </Typography>
         </div>
     </Fade>
   );
