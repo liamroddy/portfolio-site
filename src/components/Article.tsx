@@ -1,14 +1,22 @@
-import React from 'react';
-import { Typography } from '@mui/material';
-import { CardMedia, Grid, Card, CardContent, Button } from '@mui/material';
-//import Grid from '@mui/material/Grid2';
+import { Typography, Theme } from '@mui/material';
+import { CardMedia, Card, CardContent, Button } from '@mui/material';
 import './Article.scss';
 import { Fade } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { FADE_IN_TIME, CAROUSEL_INTERVAL } from '../config';
 
-function Article({ category, header, images, theme, body, buttonText, buttonLink }) {
+interface ArticleProps {
+  category: string;
+  header: string;
+  images: string[];
+  theme: Theme;
+  body: string;
+  buttonText?: string;
+  buttonLink?: string;
+}
+
+function Article({ category, header, images, theme, body, buttonText, buttonLink }: ArticleProps): JSX.Element {
   return (
     <div className='article'>
       <Fade in={true} timeout={FADE_IN_TIME}>
@@ -27,7 +35,7 @@ function Article({ category, header, images, theme, body, buttonText, buttonLink
               <CardMedia
                 key={index}
                 component="img"
-                image={require(`../images/${image}`)}
+                image={`/src/images/${image}`}
                 style={{ marginBottom: '20px' }}
               />
             ))}

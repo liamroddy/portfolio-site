@@ -1,8 +1,13 @@
-import React from 'react';
 import { styled } from '@mui/material/styles';
-import { ThemeProvider, IconButton, Switch } from '@mui/material';
+import { ThemeProvider, Switch, Theme } from '@mui/material';
 
-const DarkModeSwitch = ({ handleThemeChange, darkMode, theme }) => {
+interface DarkModeSwitchProps {
+  handleThemeChange: () => void;
+  darkMode: boolean;
+  theme: Theme;
+}
+
+const DarkModeSwitch = ({ handleThemeChange, darkMode, theme }: DarkModeSwitchProps): JSX.Element => {
     const CustomSwitch = styled(Switch)(({ theme }) => ({
         '& .MuiSwitch-switchBase.Mui-checked': {
             color: theme.palette.primary.main,

@@ -1,9 +1,12 @@
 import Article from "./Article";
-
 import { lightTheme, darkTheme } from '../Themes';
 import { Grid } from "@mui/material";
 
-function MainBody({ theme, darkMode }) {
+interface MainBodyProps {
+  darkMode: boolean;
+}
+
+function MainBody({ darkMode }: MainBodyProps): JSX.Element {
     return (
         <Grid container>
             <Grid xs={12} md={6} className='column'> 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Grid } from '@mui/material';
@@ -9,10 +9,10 @@ import BackgroundHolder from './components/BackgroundHolder';
 import { lightTheme, darkTheme } from './Themes';
 import './App.scss';
 
-function App() {
-  const [darkMode, setDarkMode] = useState(true);
+function App(): JSX.Element {
+  const [darkMode, setDarkMode] = useState<boolean>(true);
 
-  const handleThemeChange = () => {
+  const handleThemeChange = (): void => {
     setDarkMode(!darkMode);
   };
 

@@ -1,9 +1,9 @@
-import React from 'react';
 import { Typography } from '@mui/material';
 import { Fade } from '@mui/material';
+
 export const FADE_IN_TIME = 3000;
 
-function About() {
+function About(): JSX.Element {
   return (
     <Fade in={true} timeout={FADE_IN_TIME}>
       <div>
