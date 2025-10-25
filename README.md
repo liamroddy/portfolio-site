@@ -1,66 +1,115 @@
 # portfolio-site
 
-My personal portofolio site, built with with React and MUI
+My personal portfolio site showcasing my software development, design, and art projects.
+It has a slick, responsive design that looks good on mobile, tablet and desktop.
 
-### `npm start`
+Check it out at www.liamroddy.dev
 
-Runs the app in the development mode.\
+## 🛠️ Built With
+
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe JavaScript
+- **Vite** - Fast build tool and development server
+- **Material-UI (MUI)** - React component library
+- **Sass** - CSS preprocessor
+- **React Responsive Carousel** - Image carousel component
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/liamroddy/portfolio-site.git
+cd portfolio-site
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+## 📋 Available Scripts
+
+### `npm run dev`
+
+Runs the app in development mode with Vite's fast HMR.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The page will reload instantly when you make changes.\
+TypeScript errors and warnings will be shown in the console.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `dist` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm run preview`
 
-### `npm run eject`
+Locally preview the production build.\
+Useful for testing the production build before deployment.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `npm run deploy`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Deploys the built app to GitHub Pages.\
+Runs `npm run build` first, then deploys the `dist` folder to the `gh-pages` branch.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🎨 Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Dark/Light Theme Toggle** - Switch between dark and light modes
+- **Responsive Design** - Works on desktop, tablet, and mobile
+- **Project Showcase** - Interactive cards displaying various projects
+- **Image Carousels** - Smooth image galleries for project screenshots
+- **Modern Typography** - Clean, professional design with Roboto Mono font
+- **Smooth Animations** - Fade-in effects and smooth transitions
 
-## Learn More
+## 📁 Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src/
+├── components/          # React components
+│   ├── Article.tsx     # Project showcase cards
+│   ├── Header.tsx      # Site header with navigation
+│   ├── MainBody.tsx    # Main content area
+│   ├── BackgroundHolder.tsx # Background styling
+│   └── DarkModeSwitch.tsx   # Theme toggle component
+├── images/             # Static images and assets
+├── App.tsx            # Main app component
+├── main.tsx           # App entry point
+├── Themes.ts          # MUI theme configuration
+├── config.ts          # App configuration constants
+└── vite-env.d.ts      # Vite type definitions
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚀 Deployment
 
-### Code Splitting
+This site is automatically deployed to GitHub Pages using the `gh-pages` package:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Build the project: `npm run build`
+2. Deploy to GitHub Pages: `npm run deploy`
 
-### Analyzing the Bundle Size
+The site will be available at: https://www.liamroddy.dev/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🔧 Development
 
-### Making a Progressive Web App
+This project was migrated from Create React App to Vite for better performance and modern tooling:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Fast HMR**: Instant hot module replacement during development
+- **TypeScript**: Full type safety and better IDE support
+- **Modern Build**: Optimized bundling with Rollup
+- **Better DX**: Improved developer experience with faster builds
 
-### Advanced Configuration
+## 📱 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Portfolio**: [liamroddy.dev](https://www.liamroddy.dev/)
+- **GitHub**: [@liamroddy](https://github.com/liamroddy)
+- **LinkedIn**: [liam-roddy](https://www.linkedin.com/in/liam-roddy)
+- **Art Instagram**: [@l.j.roddy.art](https://www.instagram.com/l.j.roddy.art/)
