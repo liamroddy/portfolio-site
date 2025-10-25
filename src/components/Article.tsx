@@ -35,7 +35,7 @@ function Article({ category, header, images, theme, body, buttonText, buttonLink
               <CardMedia
                 key={index}
                 component="img"
-                image={`/src/images/${image}`}
+                image={`/${image}`}
                 style={{ marginBottom: '20px' }}
               />
             ))}

@@ -1,7 +1,6 @@
 import { Typography, Fade, Theme } from '@mui/material';
 import Link from '@mui/material/Link';
 import DarkModeSwitch from './DarkModeSwitch';
-import headshotImage from '../images/headshot.jpg';
 import './Header.scss';
 
 export const FADE_IN_TIME = 3000;
@@ -15,7 +14,7 @@ function Header({ theme, handleThemeChange }: HeaderProps): JSX.Element {
   return (
     <Fade in={true} timeout={FADE_IN_TIME}>
         <div className="header-container">
-          <img src={headshotImage} alt="Headshot" className="headshot" />
+          <img src="/headshot.jpg" alt="Headshot" className="headshot" />
 
           <Typography variant="h1" component="h1" gutterBottom>
             Liam Roddy
