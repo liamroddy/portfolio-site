@@ -5,18 +5,24 @@ import { Fade } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { FADE_IN_TIME, CAROUSEL_INTERVAL } from '../config';
+import { useTranslation } from 'react-i18next';
 
 interface ArticleProps {
-  category: string;
-  header: string;
+  categoryKey: string;
+  headerKey: string;
   images: string[];
   theme: Theme;
-  body: string;
-  buttonText?: string;
+  bodyKey: string;
+  buttonKey?: string;
   buttonLink?: string;
 }
 
-function Article({ category, header, images, theme, body, buttonText, buttonLink }: ArticleProps): JSX.Element {
+function Article({ categoryKey, headerKey, images, theme, bodyKey, buttonKey, buttonLink }: ArticleProps): JSX.Element {
+  const { t, i18n } = useTranslation();
+  const isGaeilge = i18n.language === 'ga';
+  const gaFont = "'Aonchlo GC', serif";
+  const fontFamily = isGaeilge ? gaFont : undefined;
+
   return (
     <div className='article'>
       <Fade in={true} timeout={FADE_IN_TIME}>
@@ -42,31 +48,32 @@ function Article({ category, header, images, theme, body, buttonText, buttonLink
           </Carousel>
             
           <CardContent>
-            <Typography variant="h2" component="h2" gutterBottom>
-              {category}
+            <Typography variant="h2" component="h2" gutterBottom style={{ fontFamily }}>
+              {t(categoryKey)}
             </Typography>
             <Typography variant="h1"
             component="h1"
             style={{ 
               hyphens: 'auto', 
               wordBreak: 'break-word', 
-              overflowWrap: 'break-word' 
+              overflowWrap: 'break-word',
+              fontFamily,
             }}
-            lang="en">
-              {header}
+            lang={isGaeilge ? 'ga' : 'en'}>
+              {t(headerKey)}
             </Typography>
-            <Typography variant="body1" component="p" gutterBottom>
-              {body}
+            <Typography variant="body1" component="p" gutterBottom style={{ fontFamily }}>
+              {t(bodyKey)}
             </Typography>
-            {buttonText && buttonLink &&
+            {buttonKey && buttonLink &&
               <Button
               variant="contained"
               color="primary"
-              style={{ marginTop: '1em' }}
+              style={{ marginTop: '1em', fontFamily }}
               href={buttonLink}
               target="_blank"
               rel="noopener noreferrer">
-              {buttonText}
+              {t(buttonKey)}
             </Button>}
           </CardContent>
         </Card>
