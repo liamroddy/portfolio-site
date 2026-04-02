@@ -21,7 +21,7 @@ function Header({ theme, handleThemeChange }: HeaderProps): JSX.Element {
   return (
     <Fade in={true} timeout={FADE_IN_TIME}>
         <div className="header-container">
-          <img src="/headshot.jpg" alt="Headshot" className="headshot" />
+          <img src="/headshot/headshot.jpg" alt="Headshot" className="headshot" />
 
           <Typography variant="h1" component="h1" gutterBottom style={{ fontFamily }}>
             {t('header.name')}

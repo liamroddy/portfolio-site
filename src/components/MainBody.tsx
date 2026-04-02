@@ -15,7 +15,7 @@ function MainBody({ darkMode }: MainBodyProps): JSX.Element {
                 buttonKey="articles.worder.button"
                 buttonLink={"https://liamroddy.github.io/Worder/"}
                 images={[
-                  'worder-demo.webp'
+                  'worder/worder-demo.webp'
                 ]}
                  />
               <Article categoryKey="articles.clock.category" headerKey="articles.clock.header" theme={darkMode ? darkTheme : lightTheme}
@@ -23,7 +23,7 @@ function MainBody({ darkMode }: MainBodyProps): JSX.Element {
                 buttonKey="articles.clock.button"
                 buttonLink={"https://github.com/liamroddy/LED-Matrix-Clock/tree/main"}
                 images={[
-                  'clock-photo.jpg'
+                  'clock/clock-photo.jpg'
                 ]}
                  />
               <Article categoryKey="articles.art.category" headerKey="articles.art.header" theme={darkMode ? darkTheme : lightTheme}
