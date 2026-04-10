@@ -1,4 +1,4 @@
-import './BackgroundHolder.scss';
+import './BackgroundHolder.css';
 
 interface BackgroundHolderProps {
   darkMode: boolean;

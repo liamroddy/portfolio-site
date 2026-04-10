@@ -7,7 +7,7 @@ import Header from './components/Header';
 import MainBody from './components/MainBody';
 import BackgroundHolder from './components/BackgroundHolder';
 import { lightTheme, darkTheme } from './Themes';
-import './App.scss';
+import './App.css';
 
 function App(): JSX.Element {
   const [darkMode, setDarkMode] = useState<boolean>(true);

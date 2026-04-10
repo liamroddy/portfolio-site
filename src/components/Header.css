@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Full viewport height to center vertically */
-  text-align: center; /* Center text horizontally */
+  min-height: 100vh;
+  text-align: center;
   padding: 5%;
 }
 
@@ -18,7 +18,7 @@
   aspect-ratio: 1 / 1;
 }
 
-@media (min-width: 1200px) { /* Material-UI lg breakpoint */
+@media (min-width: 1200px) {
   .header-container {
     position: fixed;
     top: 0;

@@ -1,6 +1,6 @@
 import { Typography, Theme } from '@mui/material';
 import { CardMedia, Card, CardContent, Button } from '@mui/material';
-import './Article.scss';
+import './Article.css';
 import { Fade } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';

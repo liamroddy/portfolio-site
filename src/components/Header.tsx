@@ -3,7 +3,7 @@ import Link from '@mui/material/Link';
 import { Trans, useTranslation } from 'react-i18next';
 import DarkModeSwitch from './DarkModeSwitch';
 import LanguageSwitch from './LanguageSwitch';
-import './Header.scss';
+import './Header.css';
 
 export const FADE_IN_TIME = 3000;
 

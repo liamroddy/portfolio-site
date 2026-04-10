@@ -2,6 +2,7 @@
 
 My personal portfolio site showcasing my software development, design, and art projects.
 It has a slick, responsive design that looks good on mobile, tablet and desktop.
+Features multiple themes and Irish language support in Cló Gaelach font.
 
 Check it out at www.liamroddy.dev
 
@@ -62,15 +63,6 @@ Useful for testing the production build before deployment.
 Deploys the built app to GitHub Pages.\
 Runs `npm run build` first, then deploys the `dist` folder to the `gh-pages` branch.
 
-## 🎨 Features
-
-- **Dark/Light Theme Toggle** - Switch between dark and light modes
-- **Responsive Design** - Works on desktop, tablet, and mobile
-- **Project Showcase** - Interactive cards displaying various projects
-- **Image Carousels** - Smooth image galleries for project screenshots
-- **Modern Typography** - Clean, professional design with Roboto Mono font
-- **Smooth Animations** - Fade-in effects and smooth transitions
-
 ## 📁 Project Structure
 
 ```
@@ -106,10 +98,3 @@ This project was migrated from Create React App to Vite for better performance a
 - **TypeScript**: Full type safety and better IDE support
 - **Modern Build**: Optimized bundling with Rollup
 - **Better DX**: Improved developer experience with faster builds
-
-## 📱 Contact
-
-- **Portfolio**: [liamroddy.dev](https://www.liamroddy.dev/)
-- **GitHub**: [@liamroddy](https://github.com/liamroddy)
-- **LinkedIn**: [liam-roddy](https://www.linkedin.com/in/liam-roddy)
-- **Art Instagram**: [@l.j.roddy.art](https://www.instagram.com/l.j.roddy.art/)

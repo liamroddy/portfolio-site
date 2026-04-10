@@ -1,8 +1,3 @@
-$light-gradient-top: #e6e6ef;
-$light-gradient-bottom: #f9f9fc;
-$dark-gradient-top: #161a1d;
-$dark-gradient-bottom: #22282d;
-
 .background-holder {
     position: fixed;
     top: 0;
@@ -25,12 +20,12 @@ $dark-gradient-bottom: #22282d;
   }
   
   .background-holder::before {
-    background: linear-gradient($light-gradient-top, $light-gradient-bottom);
+    background: linear-gradient(#e6e6ef, #f9f9fc);
     opacity: 1;
   }
   
   .background-holder::after {
-    background: linear-gradient($dark-gradient-top, $dark-gradient-bottom);
+    background: linear-gradient(#161a1d, #22282d);
     opacity: 0;
   }
   
